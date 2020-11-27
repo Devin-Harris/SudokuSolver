@@ -1,0 +1,86 @@
+.section_container {
+  width: 40vmin;
+  .click_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+    margin: .5rem auto;
+    transition: .3s;
+    &:hover {
+      color: #66FFA6;
+      border: 1px solid #66FFA6;
+      cursor: pointer;
+    }
+  }
+  .content {
+    width: 100%;
+    p {
+      span {
+        color: #66FFA6;
+      }
+    }
+  }
+}
+
+.unsolvable { 
+  .click_section {
+    border: 1px solid #ff6666;
+    color:#ff6666;
+    &:hover {
+      color: #ff6666;
+      border: 1px solid #ff6666;
+      cursor: default;
+    }
+  }
+}
+
+.reset {
+  .click_section {
+    border: 1px solid #A754EE;
+    color:#A754EE;
+    &:hover {
+      color: white;
+      border: 1px solid #A754EE;
+      cursor: pointer;
+    }
+  }
+}
+
+#githubText {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .section_container {
+    width: 70vw;
+    .click_section {
+      // display: none;
+    }
+    .content {
+      width: 100%;
+      margin: 2rem 0 5rem 0;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
